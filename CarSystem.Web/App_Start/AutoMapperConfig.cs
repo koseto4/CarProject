@@ -35,7 +35,7 @@ namespace CarSystem.Web.App_Start
                         {
                             Source = i.GetGenericArguments()[0],
                             Destination = t
-                        }).ToArray();
+                        }).ToArray(); 
 
             foreach (var map in maps)
             {

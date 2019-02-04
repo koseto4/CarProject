@@ -97,8 +97,8 @@ namespace CarSystem.Web.Controllers
         [HttpGet]
         public ActionResult AddCar()
         {
-            var db = new CarSystemDbContext();
-            List<SelectListItem> items = db.Brands.Select(c => new SelectListItem
+            
+            List<SelectListItem> items = this.Data.Brands.All().Select(c => new SelectListItem
             {
                 Value = c.Id.ToString(),
                 Text = c.BrandName
